@@ -1,0 +1,216 @@
+html {
+  font-size: 22px;
+}
+.tp-nav {
+  height: 8%;
+  padding: 5px 0 5px 5px;
+}
+.tp-nav .tp-comeback {
+  height: 100%;
+  color: #01CEF9;
+  line-height: 8%;
+  display: inline-table;
+}
+.tp-nav .tp-comeback div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.tp-nav .tp-comeback div img {
+  width: 3rem;
+  vertical-align: middle;
+}
+.tp-nav .tp-comeback div span {
+  vertical-align: middle;
+  margin-left: 1.2rem;
+}
+.tp-nav .tp-pagetop {
+  height: 100%;
+  float: right;
+  color: #01CEF9;
+  width: 10rem;
+  background: url("../image/pagetop.png") no-repeat 0.5rem;
+  background-size: 10rem auto;
+}
+.tp-nav .tp-pagetop div {
+  text-align: right;
+  display: inline-table;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+.tp-nav .tp-pagetop div span {
+  display: table-cell;
+  vertical-align: middle;
+  color: #000;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-right: 1.2rem;
+}
+.tp-main {
+  width: 90%;
+  margin: 2% auto 0;
+  height: 75%;
+  display: flex;
+}
+.tp-main .tp-main-lf {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.tp-main .tp-main-lf .block {
+  flex: 1;
+}
+.tp-main .tp-main-lf .tp-main-lf-info {
+  flex: 6;
+  height: 100%;
+  background: url("../image/card.png") no-repeat;
+  background-size: 100% 100%;
+  padding: 5% 15% 5% 5%;
+  display: flex;
+}
+.tp-main .tp-main-lf .tp-main-lf-info .info-box {
+  width: 100%;
+  height: 100%;
+  display: inline-table;
+  vertical-align: middle;
+  text-align: center;
+}
+.tp-main .tp-main-lf .tp-main-lf-info .info-box div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.tp-main .tp-main-lf .tp-main-lf-info .tp-card-lf {
+  flex: 3;
+  width: 100%;
+}
+.tp-main .tp-main-lf .tp-main-lf-info .tp-card-lf .info-box {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+.tp-main .tp-main-lf .tp-main-lf-info .tp-card-lf .info-box div {
+  display: table-cell;
+  padding-left: 1rem;
+  vertical-align: middle;
+  font-size: 1rem;
+  box-sizing: border-box;
+  max-width: 6rem;
+  word-wrap: break-word;
+  color: #000000;
+}
+.tp-main .tp-main-lf .tp-main-lf-info .tp-card-lf .info-box div span {
+  display: inline-table;
+  min-width: 2.5rem;
+  text-indent: .2rem;
+}
+.tp-main .tp-main-lf .tp-main-lf-info .tp-card-lf .info-box div b {
+  font-weight: normal;
+}
+.tp-main .tp-main-lf .tp-main-lf-info .tp-card-rg {
+  flex: 2;
+  height: 100%;
+}
+.tp-main .tp-main-lf .tp-main-lf-info .tp-card-rg .info-box {
+  width: 100%;
+  height: 100%;
+}
+.tp-main .tp-main-lf .tp-main-lf-info .tp-card-rg .info-box div img {
+  width: 80%;
+}
+.tp-main .tp-main-rg {
+  flex: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tp-main .tp-main-rg .tp-btn-box {
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  margin: auto;
+  width: 76%;
+  height: 40%;
+}
+.tp-main .tp-main-rg .tp-btn-box div {
+  width: 100%;
+  height: 100%;
+  display: inline-table;
+}
+.tp-main .tp-main-rg .tp-btn-box div span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #c2f0ff;
+  text-shadow: 0px 0px 5px #c5c4c4;
+  font-size: 1.6em;
+}
+.tp-main .tp-main-rg .tp-btn-level-1 {
+  flex: 3;
+  height: 100%;
+  display: flex;
+}
+.tp-main .tp-main-rg .tp-btn-level-1 .tp-btn-1 {
+  flex: 5;
+  height: 100%;
+  text-align: center;
+}
+.tp-main .tp-main-rg .tp-btn-level-1 .tp-btn-other-1 {
+  flex: 3;
+  background: url("../image/q1.png") no-repeat;
+  background-size: auto 40%;
+}
+.tp-main .tp-main-rg .tp-btn-level-2 {
+  flex: 3;
+  height: 100%;
+  display: flex;
+}
+.tp-main .tp-main-rg .tp-btn-level-2 .block {
+  flex: 1;
+}
+.tp-main .tp-main-rg .tp-btn-level-2 .tp-btn-2 {
+  flex: 2;
+  height: 100%;
+}
+.tp-main .tp-main-rg .tp-btn-level-3 {
+  flex: 2;
+  display: flex;
+  height: 100%;
+}
+.tp-main .tp-main-rg .tp-btn-level-3 .tp-btn-3 {
+  flex: 3;
+  height: 100%;
+}
+.tp-main .tp-main-rg .tp-btn-level-3 .tp-btn-3 .tp-btn-box {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  margin: auto;
+  width: 80%;
+  height: 40%;
+}
+.tp-main .tp-main-rg .tp-btn-level-3 .tp-btn-3 .tp-btn-box div span {
+  font-size: 1.6em;
+}
+.tp-main .tp-main-rg .tp-btn-level-3 .block {
+  flex: 1;
+}
+.tp-main .tp-main-rg .tp-btn-level-3 .tp-btn-other-2 {
+  flex: 2;
+  background: url("../image/q2.png") no-repeat;
+  background-size: auto 100%;
+}
+.tp-main .tp-main-rg .tp-btn-info {
+  height: 100%;
+  width: 100%;
+  display: inline-table;
+  text-align: center;
+  position: relative;
+}
+.tp-main .tp-main-rg .tp-btn-info img {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 100%;
+  margin: auto;
+}

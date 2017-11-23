@@ -1,0 +1,99 @@
+@bar-border-height:29px;
+@bar-height:20px;
+@bar-padding:4px;
+p{
+  color:#525252;
+  font-size:12px;
+}
+.skillbar {
+  position:relative;
+  display:block;
+  margin-bottom:.5rem;
+  width:100%;
+  padding: 0 @bar-padding;
+  height:@bar-border-height;
+  border: 1.5px solid #f8f8f8;
+  //border-radius:3px;
+  //-moz-border-radius:3px;
+  //-webkit-border-radius:3px;
+  -webkit-transition:0.4s linear;
+  -moz-transition:0.4s linear;
+  -ms-transition:0.4s linear;
+  -o-transition:0.4s linear;
+  transition:0.4s linear;
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
+}
+
+.skillbar-title {
+  width: 2.5rem;
+  font-size:.5rem;
+  color:#ffffff;
+  //-webkit-border-top-left-radius:3px;
+  //-webkit-border-bottom-left-radius:4px;
+  //-moz-border-radius-topleft:3px;
+  //-moz-border-radius-bottomleft:3px;
+  //border-top-left-radius:3px;
+  //border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+  display:block;
+  text-align: left;
+  height:@bar-border-height;
+  line-height:@bar-border-height;
+  //-webkit-border-top-left-radius:3px;
+  //-webkit-border-bottom-left-radius:3px;
+  //-moz-border-radius-topleft:3px;
+  //-moz-border-radius-bottomleft:3px;
+  //border-top-left-radius:3px;
+  //border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+  margin: @bar-padding 0;
+  height:@bar-height;
+  width:0px;
+  background:#6adcfa;
+  //border-radius:3px;
+  //-moz-border-radius:3px;
+  //-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+  position:absolute;
+  right:10px;
+  top:0;
+  font-size:11px;
+  height:@bar-border-height;
+  line-height:@bar-border-height;
+  color:#ffffff;
+  color:#C1E4EB;
+}
+.bar-color-1{
+  .skillbar-title span{
+    color: #47BEDC;
+  }
+  .skillbar-bar{
+    color: #47BEDC;
+  }
+}
+.bar-color-2{
+  .skillbar-title span{
+    color: #C1E4EB;
+  }
+  .skillbar-bar{
+    color: #C1E4EB;
+  }
+}
+.bar-color-3{
+  .skillbar-title span{
+    color: #1B91D1;
+  }
+  .skillbar-bar{
+    color: #1B91D1;
+  }
+}

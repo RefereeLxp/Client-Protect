@@ -1,0 +1,283 @@
+body{
+  position: relative;
+}
+//��ҳnav
+.index-nav{
+  width: 100%;
+  height: 8%;
+  margin-top: 2%;
+  .nav-logo{
+    height: 100%;
+    float: left;
+    margin-left: 2%;
+    img{
+      height: 100%;
+    }
+  }
+  .language-switch-box{
+    height: 100%;
+    float: right;
+    margin-right: 2%;
+    .language-switch-btn{
+      height: 2rem;
+      width: 5rem;
+      line-height: 2rem;
+      border: 2px solid #68AEE0;
+      text-align: center;
+      color: #8AC6ED;
+      box-shadow: 0px 0px 5px #b2b0b0;
+    }
+  }
+}
+@meter-size:3rem;
+@left-box-width:90%;
+@left-box-margin:0 5%;
+@circle-size:7rem;
+@index-btn-H:4.5rem;
+@index-btn-W:@index-btn-H*2.7;
+@other-btn-H:1.5rem;
+@other-btn-W:@other-btn-H*4.5;
+.main-index{
+  width: 100%;
+  height: 70%;
+  padding: 2.5% 3% 0 7%;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  .data-box{
+    flex: 3;
+    height: 100%;
+    width: @left-box-width;
+    margin: @left-box-margin;
+    display: flex;
+    flex-direction:column;
+    .data-show{
+      width: 100%;
+      flex: 1;
+      box-sizing: border-box;
+      display: flex;
+      .data-show-box{
+        height: 100%;
+        flex: 1;
+        text-align: center;
+        .data-show-meter{
+          margin: auto;
+          width: @meter-size;
+          height: @meter-size;
+        }
+        .show-meter-1{
+          background: url("../image/meter-1.png") no-repeat;
+          background-size: @meter-size @meter-size;
+        }
+        .show-meter-2{
+          background: url("../image/meter-2.png") no-repeat;
+          background-size: @meter-size @meter-size;
+        }
+        .show-meter-3{
+          background: url("../image/meter-3.png") no-repeat;
+          background-size: @meter-size @meter-size;
+        }
+        .show-meter-4{
+          background: url("../image/meter-4.png") no-repeat;
+          background-size: @meter-size @meter-size;
+        }
+      }
+    }
+    .show-logo{
+      width: 100%;
+      flex: 2;
+      display: inline-table;
+      border: 1px solid transparent;
+      .show-logo-box{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        img{
+          width: 70%;
+          max-width: 400px;
+        }
+      }
+    }
+    .blank-box{
+      width: 100%;
+      flex: 1;
+    }
+  }
+  .btn-box{
+    flex: 4;
+    display: flex;
+    width: 100%;
+    flex-direction:column;
+    .btn-box-circle-1{
+      flex: 1;
+    }
+    .btn-box-circle-2{
+      flex: 2;
+    }
+    .btn-box-circle-3{
+      flex: 1;
+    }
+    .btn-box-circle{
+      display: flex;
+      width: 100%;
+      .btn-circle{
+        flex: 2;
+        height: 100%;
+        display: inline-table;
+        vertical-align: middle;
+        text-align: center;
+        .btn-circle-info{
+          display: table-cell;
+          vertical-align: middle;
+          text-align: right;
+          img{
+            height: @circle-size;
+          }
+        }
+      }
+      .index-btn{
+        flex: 3;
+        color: #fff;
+        height: 100%;
+        width: 60%;
+        display: inline-table;
+        .index-btn-info{
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          width: 100%;
+          .index-btn-bg{
+            width: @index-btn-W;
+            height:@index-btn-H;
+            margin: auto;
+            background: url("../image/btn-border-2.png") no-repeat;
+            background-size: @index-btn-W @index-btn-H;
+            line-height:@index-btn-H;
+            font-size: 1.6rem;
+            color: #82B9DC;
+          }
+        }
+      }
+    }
+  }
+  .other-btn-box{
+    flex: 1;
+  }
+}
+
+@media (max-width:1500px) {
+  @meter-size:3rem;
+  @left-box-width:90%;
+  @left-box-margin:0 5%;
+  @circle-size:5rem;
+  @index-btn-H:3.5rem;
+  @index-btn-W:@index-btn-H*2.7;
+  .main-index{
+    .data-box{
+      width: @left-box-width;
+      margin: @left-box-margin;
+      .data-show{
+        .data-show-box{
+          .data-show-meter{
+            width: @meter-size;
+            height: @meter-size;
+          }
+          .show-meter-1{
+            background: url("../image/meter-1.png") no-repeat;
+            background-size: @meter-size @meter-size;
+          }
+          .show-meter-2{
+            background: url("../image/meter-2.png") no-repeat;
+            background-size: @meter-size @meter-size;
+          }
+          .show-meter-3{
+            background: url("../image/meter-3.png") no-repeat;
+            background-size: @meter-size @meter-size;
+          }
+          .show-meter-4{
+            background: url("../image/meter-4.png") no-repeat;
+            background-size: @meter-size @meter-size;
+          }
+        }
+      }
+    }
+    .btn-box{
+      .btn-box-circle{
+        .btn-circle{
+          .btn-circle-info{
+            img{
+              height: @circle-size;
+            }
+          }
+        }
+        .index-btn{
+          .index-btn-info{
+            .index-btn-bg{
+              width: @index-btn-W;
+              height:@index-btn-H;
+              background: url("../image/btn-border-2.png") no-repeat;
+              background-size: @index-btn-W @index-btn-H;
+              line-height:@index-btn-H;
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+    .other-btn-box{
+      flex: 2;
+    }
+  }
+}
+.float-box{
+  position: absolute;
+  width: 94%;
+  margin: 0 3%;
+  top: 80%;
+  .lf-box{
+    width: 18rem;
+    float: left;
+    .class-statistics{
+      width: 100%;
+      border: 1px solid transparent;
+      .class-statistics-info{
+        width: 100%;
+        .skillbar-title{
+          width: 25%;
+          float: left;
+        }
+        .skillbar{
+          float: left;
+          width: 50%;
+        }
+      }
+    }
+
+  }
+  .rg-box{
+    .other-info{
+      text-align: center;
+      width: 14rem;
+      float: right;
+      .other-btn-info{
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        margin-bottom: .3rem;
+        .other-btn-bg{
+          width: @other-btn-W;
+          height:@other-btn-H;
+          line-height: @other-btn-H;
+          margin: 0 auto;
+          background: url("../image/btn-border-2.png") no-repeat;
+          background-size: @other-btn-W @other-btn-H;
+          font-size: 0.2em;
+          color: #82B9DC;
+        }
+      }
+    }
+
+  }
+}
+

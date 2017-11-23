@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'test-icon';
+  src:  url('../fonts/test-icon.eot?u0zd6f');
+  src:  url('../fonts/test-icon.eot?u0zd6f#iefix') format('embedded-opentype'),
+    url('../fonts/test-icon.ttf?u0zd6f') format('truetype'),
+    url('../fonts/test-icon.woff?u0zd6f') format('woff'),
+    url('../fonts/test-icon.svg?u0zd6f#test-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'test-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-test:before {
+  content: "\e900";
+}
