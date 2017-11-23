@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'test-icon';
-  src:  url('../fonts/test-icon.eot?u0zd6f');
-  src:  url('../fonts/test-icon.eot?u0zd6f#iefix') format('embedded-opentype'),
-    url('../fonts/test-icon.ttf?u0zd6f') format('truetype'),
-    url('../fonts/test-icon.woff?u0zd6f') format('woff'),
-    url('../fonts/test-icon.svg?u0zd6f#test-icon') format('svg');
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ekpds6');
+  src:  url('../fonts/icomoon.eot?ekpds6#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ekpds6') format('truetype'),
+    url('../fonts/icomoon.woff?ekpds6') format('woff'),
+    url('../fonts/icomoon.svg?ekpds6#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'test-icon' !important;
+  font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -24,6 +24,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-test:before {
+.icon-dayin:before {
   content: "\e900";
 }
+.icon-saoma:before {
+  content: "\e901";
+}
+.icon-saoka:before {
+  content: "\e902";
+}
+
