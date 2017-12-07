@@ -1,0 +1,148 @@
+@tp-main-lf:2;
+@tp-main-rg:5;
+.tp-main{
+  width: 90%;
+  margin: 2% auto 0;
+  height: 70%;
+  display: flex;
+  .tp-main-lf{
+    flex: @tp-main-lf;
+    display: flex;
+    height: 100%;
+    .jigui-check{
+      flex: 2;
+    }
+    .jigui-img{
+      flex: 3;
+      text-align: center;
+      img{
+        width: 80%;
+        height: 100%;
+      }
+
+    }
+  }
+  .tp-main-rg{
+    flex: @tp-main-rg;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    .area-box{
+      flex: 5;
+      display: flex;
+      flex-direction:row;
+      max-height: 400px;
+      .prev,.next{
+        flex: 1;
+        height: 100%;
+      }
+      .area{
+        flex: 5;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        .area-border{
+          height: 330px;
+          overflow: auto;
+          display: flex;
+          width: 100%;
+          box-sizing: border-box;
+          flex-wrap:wrap;
+          .area-box-info{
+            flex: 1;
+            min-width: 29%;
+            max-width: 29%;
+            width: 29%;
+            height: 120px;
+            background: rgba(2, 191, 243, .7);
+            box-shadow: 0px 0px 5px #fff;
+            border-radius: 10px;
+            box-sizing: border-box;
+            margin:20px 2%;
+            display: flex;
+            .area-icon{
+              flex: 1;
+              color: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img{
+                width: 90%;
+              }
+            }
+            .area-tit{
+              flex: 2;
+              display: flex;
+              align-items: center;
+              div{
+                p{
+                  span{
+                    color: #dadada;
+                  }
+                  font-weight:bold ;
+                  color: #1B2122;
+                  font-size: .6rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .jigui-bar{
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .bar-box{
+        width: 65%;
+        .class-statistics-info .skillbar-title{
+          width: 20%;
+        }
+        .class-statistics .class-statistics-info .skillbar{
+          width: 63%;
+        }
+        .skillbar-bar{
+          margin: 3px 0;
+        }
+      }
+    }
+  }
+}
+.skillbar-title span {
+  font-size: .75rem;
+}
+//.swiper-container {
+//  width: 100%;
+//  height: auto;
+//  margin-left: auto;
+//  margin-right: auto;
+//}
+//.swiper-slide {
+//  text-align: center;
+//  font-size: 18px;
+//  background: #fff;
+//  height: 120px;
+//
+//  /* Center slide text vertically */
+//  display: -webkit-box;
+//  display: -ms-flexbox;
+//  display: -webkit-flex;
+//  display: flex;
+//  -webkit-box-pack: center;
+//  -ms-flex-pack: center;
+//  -webkit-justify-content: center;
+//  justify-content: center;
+//  -webkit-box-align: center;
+//  -ms-flex-align: center;
+//  -webkit-align-items: center;
+//  align-items: center;
+//}
+@media (max-width: 1300px) {
+  .tp-main .tp-main-rg .area-box .area .area-box-info{
+    min-width: 31%;
+    max-width: 31%;
+    margin: 20px 1%;
+  }
+}

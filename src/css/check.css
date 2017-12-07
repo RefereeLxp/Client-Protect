@@ -1,0 +1,61 @@
+.content {
+  background: url("../image/bg.png") no-repeat;
+  background-size: cover;
+}
+.content .content-bg {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.content .content-bg .check-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.content .content-bg .check-main .check-box {
+  width: 43.2rem;
+  height: 24rem;
+  background: url("../image/check-bg.png") no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+}
+.content .content-bg .check-main .check-box .tit-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .content-bg .check-main .check-box .tit-box div {
+  width: 2.2rem;
+  font-size: 2.2rem;
+  color: #fff;
+  text-shadow: 0px 0px 10px #7bc0e1;
+}
+.content .content-bg .check-main .check-box .check-btn {
+  flex: 5;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .content-bg .check-main .check-box .check-btn .check-btn-box {
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.content .content-bg .check-main .check-box .check-btn .check-btn-box .rotate-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.content .content-bg .check-main .check-box .check-btn .check-btn-box span {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0px 0px 7px #7bc0e1;
+}

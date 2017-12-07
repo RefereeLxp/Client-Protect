@@ -8,19 +8,24 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>这是一个页面</title>
+    <title></title>
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="../src/css/main.css"/>
     <link rel="stylesheet" href="../src/css/template-page.css"/>
     <link rel="stylesheet" href="../src/css/template-1.css"/>
-    <link rel="stylesheet" href="../src/css/style.css"/>
+    <link rel="stylesheet" href="../src/css/icon.css"/>
 </head>
 <body>
 <div class="content">
     <nav class="tp-nav">
         <div class="tp-comeback">
             <div>
-                <img src="../src/image/back.png" alt=""/><span>返回</span>
+                <img src="../src/image/back.png" alt=""/><span>上一页</span>
+            </div>
+        </div>
+        <div class="tp-tohome">
+            <div>
+                <img src="../src/image/home.png" alt=""/><span>首页</span>
             </div>
         </div>
         <div class="tp-pagetop">
@@ -33,7 +38,7 @@
         <div class="tp-main-lf">
             <div class="tab-content">
                 <div class="block"></div>
-                <div id="test0" class="tp-main-lf-info tp-tb-content tab-pane fade ">
+                <div id="test0" class="tp-main-lf-info tp-tb-content tab-pane fade Stu-code">
                     <!--人员扫卡-->
                     <div class="tp-tb-content">
                         <div class="tp-card-lf">
@@ -48,7 +53,7 @@
                                     <p>
                                         <span>部门：</span><b>航空宇航</b>
                                     </p>
-                                    <p>
+                                    <p class="remark-txt">
                                         <span>备注：</span><b>************************************************************************</b>
                                     </p>
                                 </div>
@@ -63,9 +68,16 @@
                         </div>
                     </div>
                 </div>
-                <div id="test1" class="tp-main-lf-info tp-tb-content tab-pane fade ">
+                <div id="test1" class="tp-main-lf-info tp-tb-content tab-pane fade Ctrl-code" style="background:url('../src/image/ctrl-box.png') no-repeat;background-size: 100% 100%; ">
                     <!--人员扫卡-->
                     <div class="tp-tb-content">
+                        <div class="tp-card-rg">
+                            <div class="info-box photo-box">
+                                <div>
+                                    <img src="../src/image/ctrl-test.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
                         <div class="tp-card-lf">
                             <div class="info-box">
                                 <div>
@@ -81,46 +93,24 @@
                                     <p>
                                         <span>备注：</span><b>************************************************************************</b>
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tp-card-rg">
-                            <div class="info-box photo-box">
-                                <div>
-                                    <img src="../src/image/test.jpg" alt="">
+                                    <p>
+                                        <button id="ctrl-test">测试按钮-设备信息已完善</button>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="test2" class="tp-main-lf-info tp-tb-content tab-pane fade ">
+                <div id="test2" class="tp-main-lf-info tp-tb-content tab-pane fade QR-code">
                     <!--人员扫卡-->
                     <div class="tp-tb-content">
-                        <div class="tp-card-lf">
-                            <div class="info-box">
-                                <div>
-                                    <p>
-                                        <span>姓名：</span><b>某某某</b>
-                                    </p>
-                                    <p>
-                                        <span>卡号：</span><b>011720118</b>
-                                    </p>
-                                    <p>
-                                        <span>部门：</span><b>航空宇航</b>
-                                    </p>
-                                    <p>
-                                        <span>备注：</span><b>************************************************************************</b>
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="QR-code-box">
+                            <img src="../src/image/QR.png" alt="" class="QR-img">
                         </div>
-                        <div class="tp-card-rg">
-                            <div class="info-box photo-box">
-                                <div>
-                                    <img src="../src/image/test.jpg" alt="">
-                                </div>
-                            </div>
+                        <div class="QR-code-btn">
+                            <div class="QR-btn">打印二维码</div>
                         </div>
+                        <!--<div class="block"></div>-->
                     </div>
                 </div>
                 <div class="block"></div>
@@ -176,31 +166,43 @@
     <footer class="tp-foot">
         <div class="block"></div>
         <div class="tp-submit-box">
-            <div class="tp-submit-btn" data-index="0">下一步</div>
+            <div class="tp-submit-btn" data-index="0" id="submit-btn">确认</div>
         </div>
     </footer>
+</div>
+<div id="store-ctrl-pop" class="tp-pop-box pop-hide">
+    <div class="tp-pop-info">
+        <div class="tp-pop">
+        </div>
+        <div class="tp-pop-btn">
+
+        </div>
+    </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="../plugins/jquery.rotate/jquery.rotate.min.js"></script>
+<script src="../src/js/template-main.js"></script>
 <script>
-    var list=[0,1,2];
-    $(function () {
-        $('.tp-main-rg .tab-a:first').tab('show');
-    });
-    $('.tp-btn-1 .tp-btn-info').addClass('active');
+//    var list=[0,1];
+    var list=['true','false','false'];
     var fister_rotate = $('.tp-btn-1').find('.dynamic');
-    img_rotate(fister_rotate);
+    $(function () {
+        $('.tp-btn-1 .tab-a').tab('show');
+        $('.tp-btn-1 .tp-btn-info').addClass('active');
+        img_rotate(fister_rotate);
+    });
+//    上部分按钮间切换
     $('.tp-main-rg').on('click', '.tp-btn-box', function () {
         var num = $(this).attr('data-tab');
         $(this).addClass('active');
         $(this).parent().addClass('active');
         $('.tp-submit-btn').attr('data-index',num);
-        if(num==list.length-1){
-            $('.tp-submit-btn').html('确认');
-        }else{
-            $('.tp-submit-btn').html('下一步');
-        }
+//        if(num==list.length-1){
+//            $('.tp-submit-btn').html('确认');
+//        }else{
+////            $('.tp-submit-btn').html('下一步');
+//        }
         var address = $('[data-tab=' + num + ']').parent().find('.dynamic');
         img_stoprotate();
         img_rotate(address);
@@ -212,41 +214,128 @@
             }
         }
     });
-    var int;
-    function img_rotate(address) {
-        var angle = 0;
-        int = setInterval(function () {
-            angle += 3;
-            address.rotate({angle});
-        }, 50);
-    }
-    function img_stoprotate() {
-        int = window.clearInterval(int);
-    }
-    $('.tp-submit-btn').click(function () {
-        var index=parseInt($(this).attr('data-index'));
-        if(index<list.length-1){
-            console.log(index+1);
-            console.log($('[data-tab='+ (index+1) +']').html());
-            $('[data-tab='+ (index+1) +']').addClass('active');
-            $('[data-tab='+ (index+1) +']').parent().addClass('active');
-            img_stoprotate();
-            var address = $('[data-tab=' + (index+1) + ']').parent().find('.dynamic');
-            img_rotate(address);
-            for (var i = 0; i < list.length; i++) {
-                if (index+1 != i) {
-                    $("[data-tab=" + i + "]").removeClass('active');
-                    $("[data-tab=" + i + "]").parent().removeClass('active');
-    //                var address = $('[data-tab=' + i + ']').parent().find('.dynamic');
-                }
-            }
-                $(this).html('下一步');
-                $(this).attr('data-index',index+1);
+    $('#ctrl-test').click(function () {
+        list[1]='true';
+        console.log(list)
+    });
+    $('.QR-btn').click(function () {
+        list[2]='true';
+        console.log(list)
+    });
+    $('#submit-btn').click(function () {
+        var address1=$('#store-ctrl-pop');
+        $('#store-ctrl-pop').addClass('pop-open');
+        var num=$.inArray("false", list);
+        console.log(num);
+        StoreCtrl(address1,num)
+    });
+$('#store-ctrl-pop').on('click','.comeback-btn', function () {
+    $('#store-ctrl-pop').removeClass('pop-open');
+    location.href = "home/index.html";
+});
+$('#store-ctrl-pop').on('click','.continue-btn', function () {
+    $('#store-ctrl-pop').removeClass('pop-open');
+//    此处应加清空设备信息处手填内容函数
+    TabActive(1);
+});
+function StoreCtrl(id,num,succUrl){
+    var html;
+    if(id.has('.pop-open')){
+        console.log('弹框被打开');
+        switch (num){
+            case 1:
+                html=`<p class="">设备信息不完整，无法保存</p>`;
+                id.find('.tp-pop').empty().html(html);
+                setTimeout(function () {
+                    id.removeClass('pop-open');
+                    TabActive(num);
+                },1000);
+
+                break;
+            case 2:
+                html=`<p class="">您还未打印设备条码</p>`;
+                id.find('.tp-pop').empty().html(html);
+                setTimeout(function () {
+                    id.removeClass('pop-open');
+                    TabActive(num);
+                },1000);
+                break;
+            case -1:
+                html=`
+                     <div class="">
+                             正在保存请稍等
+                             <div id="fountainG">
+                                <div id="fountainG_1" class="fountainG"></div>
+                                <div id="fountainG_2" class="fountainG"></div>
+                                <div id="fountainG_3" class="fountainG"></div>
+                                <div id="fountainG_4" class="fountainG"></div>
+                                <div id="fountainG_5" class="fountainG"></div>
+                                <div id="fountainG_6" class="fountainG"></div>
+                                <div id="fountainG_7" class="fountainG"></div>
+                                <div id="fountainG_8" class="fountainG"></div>
+                            </div>
+                    </div>
+                `
+                var btn_html=`
+                    <div class="pop-btn-box">
+                        <div class="pop-btn comeback-btn"><span>回首页</span></div>
+                    </div>
+                    <div class="pop-btn-box">
+                        <div class="pop-btn continue-btn"><span>继续存库</span></div>
+                    </div>
+                `
+                id.find('.tp-pop').empty().html(html);
+                setTimeout(function () {
+                    html=`
+                        <p class="">保存成功!</p>
+                    `
+                    id.find('.tp-pop').empty().html(html);
+                    id.find('.tp-pop-btn').empty().html(btn_html);
+                },2000);
+                break;
         }
-        if(index==list.length-2){
-            $(this).html('确认');
+    }
+}
+function TabActive(num){
+    $('[data-tab=' + num + ']').addClass('active');
+    $('[data-tab=' + num + ']').parent().addClass('active');
+    $('[data-tab=' + num + ']').parent().find('.tab-a').tab('show');
+    var address = $('[data-tab=' + num + ']').parent().find('.dynamic');
+    img_stoprotate();
+    img_rotate(address);
+    for (var i = 0; i < list.length; i++) {
+        if (num != i) {
+            $("[data-tab=" + i + "]").removeClass('active');
+            $("[data-tab=" + i + "]").parent().removeClass('active');
+            var address = $('[data-tab=' + i + ']').parent().find('.dynamic');
         }
-    })
+    }
+}
+////    下一步按钮
+//    $('#submit-btn').click(function () {
+//        var index=parseInt($(this).attr('data-index'));
+//        if(index<list.length){
+//            console.log(index+1);
+//            console.log($('[data-tab='+ (index+1) +']').html());
+//            $('[data-tab='+ (index+1) +']').addClass('active');
+//            $('[data-tab='+ (index+1) +']').parent().addClass('active');
+//            img_stoprotate();
+//            var address = $('[data-tab=' + (index+1) + ']').parent().find('.dynamic');
+//            img_rotate(address);
+//            for (var i = 0; i < list.length; i++) {
+//                if (index+1 != i) {
+//                    $("[data-tab=" + i + "]").removeClass('active');
+//                    $("[data-tab=" + i + "]").parent().removeClass('active');
+//    //                var address = $('[data-tab=' + i + ']').parent().find('.dynamic');
+//                }
+//            }
+//                $(this).html('下一步');
+//                $(this).attr('data-index',index+1);
+//        }
+//        if(index==list.length-1){
+//            $(this).html('确认');
+//        }
+//    })
 </script>
 </body>
 </html>

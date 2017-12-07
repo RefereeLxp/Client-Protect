@@ -9,16 +9,16 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title></title>
-    <link rel="stylesheet" href="../src/css/bar.css"/>
-    <link rel="stylesheet" href="../src/css/main.css"/>
-    <link rel="stylesheet" href="../src/css/index.css"/>
+    <link rel="stylesheet" href="../../src/css/bar.css"/>
+    <link rel="stylesheet" href="../../src/css/main.css"/>
+    <link rel="stylesheet" href="../../src/css/index.css"/>
 </head>
 <body>
 <div class="content">
     <!--首页nav-->
     <nav class="index-nav">
         <div class="nav-logo">
-            <img src="../src/image/nav.png" alt=""/>
+            <img src="../../src/image/nav.png" alt=""/>
         </div>
         <div class="language-switch-box">
             <div class="language-switch-btn">
@@ -43,8 +43,9 @@
                 </div>
             </div>
             <div class="show-logo">
-                <div class="show-logo-box rotate">
-                    <img src="../src/image/logo.png" alt=""/>
+                <div class="show-logo-box">
+                    <img src="../../src/image/logo-min.png" alt=""/>
+                    <img src="../../src/image/logo.png" alt="" class="rotate-logo"/>
                 </div>
             </div>
             <div class="blank-box">
@@ -54,13 +55,13 @@
         <div class="btn-box">
             <div class="btn-box-circle btn-box-circle-1">
                 <div class="btn-circle">
-                    <div class="btn-circle-info rotate">
-                        <img src="../src/image/circle.png" alt=""/>
+                    <div class="btn-circle-info">
+                        <img src="../../src/image/circle.png" alt=""/>
                     </div>
                 </div>
                 <div class="index-btn">
                     <div class="index-btn-info">
-                        <div class="index-btn-bg" id="btn-1">
+                        <div class="index-btn-bg" id="store-btn">
                             设备存库
                         </div>
                     </div>
@@ -68,13 +69,13 @@
             </div>
             <div class="btn-box-circle btn-box-circle-2">
                 <div class="btn-circle">
-                    <div class="btn-circle-info rotate">
-                        <img src="../src/image/circle.png" alt=""/>
+                    <div class="btn-circle-info">
+                        <img src="../../src/image/circle.png" alt=""/>
                     </div>
                 </div>
                 <div class="index-btn">
                     <div class="index-btn-info">
-                        <div class="index-btn-bg">
+                        <div class="index-btn-bg" id="borrow-btn">
                             借用设备
                         </div>
                     </div>
@@ -82,13 +83,13 @@
             </div>
             <div class="btn-box-circle btn-box-circle-3">
                 <div class="btn-circle">
-                    <div class="btn-circle-info rotate">
-                        <img src="../src/image/circle.png" alt=""/>
+                    <div class="btn-circle-info">
+                        <img src="../../src/image/circle.png" alt=""/>
                     </div>
                 </div>
                 <div class="index-btn">
                     <div class="index-btn-info">
-                        <div class="index-btn-bg">
+                        <div class="index-btn-bg" id="repay-btn">
                             归还设备
                         </div>
                     </div>
@@ -149,21 +150,38 @@
         </div>
     </div>
 </div>
-<script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../../plugins/jquery.rotate/jquery.rotate.min.js"></script>
+<script src="../../src/js/template-main.js"></script>
 <script>
     $(document).ready(function(){
         $('.skillbar').each(function(){
             $(this).find('.skillbar-bar').animate({
                 width:$(this).attr('data-percent')
-            },6000);
+            },2000);
         });
     });
 </script>
 <script>
-
-    $('#btn-1').click(function () {
-        $(this).hide();
+    $('.btn-box-circle-1 #store-btn').click(function () {
+        window.location.href = "../store/store-check.html";
     });
+    $('.btn-box-circle-2 #borrow-btn').click(function () {
+        window.location.href = "../borrow/borrow-check.html";
+    });
+    $('.btn-box-circle-3 #repay-btn').click(function () {
+        window.location.href = "../repay/repay-scancode.html";
+    });
+
+    var logo_img = $('.show-logo-box').find('.rotate-logo'),
+        btn_img1=$('.btn-box-circle-1').find('img'),
+        btn_img2=$('.btn-box-circle-2').find('img'),
+        btn_img3=$('.btn-box-circle-3').find('img');
+    img_rotate(logo_img,1);
+    img_rotate(btn_img1,-1);
+    img_rotate(btn_img2,-1);
+    img_rotate(btn_img3,-1);
+
 </script>
 </body>
 </html>

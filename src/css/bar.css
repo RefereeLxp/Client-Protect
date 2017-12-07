@@ -31,6 +31,7 @@ p {
   text-align: left;
   height: 29px;
   line-height: 29px;
+  font-size: .5rem;
 }
 .skillbar-bar {
   margin: 4px 0;
@@ -53,16 +54,34 @@ p {
 }
 .bar-color-1 .skillbar-bar {
   color: #47BEDC;
+  background: #47BEDC;
 }
 .bar-color-2 .skillbar-title span {
   color: #C1E4EB;
 }
 .bar-color-2 .skillbar-bar {
   color: #C1E4EB;
+  background: #C1E4EB;
 }
 .bar-color-3 .skillbar-title span {
   color: #1B91D1;
 }
 .bar-color-3 .skillbar-bar {
   color: #1B91D1;
+  background: #1B91D1;
+}
+.class-statistics {
+  width: 100%;
+  border: 1px solid transparent;
+}
+.class-statistics .class-statistics-info {
+  width: 100%;
+}
+.class-statistics .class-statistics-info .skillbar-title {
+  width: 25%;
+  float: left;
+}
+.class-statistics .class-statistics-info .skillbar {
+  float: left;
+  width: 50%;
 }

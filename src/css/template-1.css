@@ -21,10 +21,8 @@
   flex-direction: column;
 }
 .tp-main .tp-main-lf .tp-main-lf-info {
-  flex: 6;
+  flex: 7;
   height: 100%;
-  background: url("../image/card.png") no-repeat;
-  background-size: 100% 100%;
   padding: 5% 15% 5% 5%;
   display: flex;
 }
@@ -47,6 +45,7 @@
 .tp-main .tp-main-lf .tp-main-lf-info .tp-tb-content .tp-card-lf {
   flex: 3;
   width: 100%;
+  display: flex;
 }
 .tp-main .tp-main-lf .tp-main-lf-info .tp-tb-content .tp-card-lf .info-box {
   width: 100%;
@@ -206,4 +205,114 @@
 }
 .tp-main .tp-main-rg .tp-btn-info .dynamic {
   display: none;
+}
+.Stu-code {
+  background: url("../image/card.png") no-repeat;
+  background-size: 100% 100%;
+}
+#ctrl-code.Ctrl-code {
+  background: url('../image/ctrl-box.png') no-repeat;
+  background-size: 100% 100%;
+  padding: 5%!important;
+  flex: 10;
+}
+#ctrl-code.Ctrl-code .tp-card-rg {
+  flex: 3!important;
+}
+#ctrl-code.Ctrl-code .info-box div {
+  font-size: .9rem!important;
+  letter-spacing: 1px;
+}
+#ctrl-code.Ctrl-code .info-box div span {
+  display: inline-block;
+  width: 5rem;
+}
+#ctrl-code.Ctrl-code .area-txt {
+  font-weight: normal;
+  font-size: .8rem;
+  color: #000;
+}
+#ctrl-code.Ctrl-code .photo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ctrl-code.Ctrl-code .photo-box div {
+  display: table-cell;
+  vertical-align: middle;
+}
+#ctrl-code.Ctrl-code .photo-box div img {
+  width: 10rem;
+}
+#ctrl-code.Ctrl-code .select-area {
+  margin-top: 1rem;
+  text-align: center;
+}
+#ctrl-code.Ctrl-code .select-area .select-area-btn {
+  display: inline-block;
+  width: 160px;
+  height: 2.5rem;
+  background: url(../image/QR-btn.png) no-repeat;
+  background-size: 100% 2.5rem;
+  text-align: center;
+  font-size: .9rem;
+  color: #fff;
+  line-height: 2.5rem;
+  text-shadow: 0px 0px 25px #2e9eff;
+  letter-spacing: .1rem;
+}
+#ctrl-code.Ctrl-code .tp-card-lf {
+  align-items: center;
+}
+#ctrl-code.Ctrl-code .tp-card-lf .info-box span {
+  width: 8rem;
+  color: #030303;
+  display: inline-block;
+}
+#ctrl-code.Ctrl-code .tp-card-lf .info-box b {
+  color: #fff;
+}
+#ctrl-code.Ctrl-code .remark-txt .input-box-1-notice {
+  right: 10px;
+  top: -4px;
+}
+.QR-code.tp-main-lf-info {
+  background: url('../image/QR-code.png') no-repeat;
+  background-size: 100% 100%;
+  padding: 3% 3% 10%!important;
+}
+.QR-code.tp-main-lf-info .tp-tb-content {
+  flex-direction: column;
+}
+.QR-code.tp-main-lf-info .tp-tb-content .QR-code-box {
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.QR-code.tp-main-lf-info .tp-tb-content .QR-code-box .QR-img {
+  width: 12rem;
+  height: 12rem;
+}
+.QR-code.tp-main-lf-info .tp-tb-content .QR-code-btn {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5%;
+}
+.QR-code.tp-main-lf-info .tp-tb-content .QR-code-btn div {
+  width: 210px;
+  height: 3rem;
+  background: url(../image/QR-btn.png) no-repeat;
+  background-size: 100% 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 3rem;
+  text-shadow: 0px 0px 25px #2e9eff;
+  letter-spacing: .1rem;
+}
+.QR-code.tp-main-lf-info .tp-tb-content .block {
+  flex: 1;
 }

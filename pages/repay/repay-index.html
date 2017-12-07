@@ -10,27 +10,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>这是一个页面</title>
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../src/css/main.css"/>
-    <link rel="stylesheet" href="../src/css/template-page.css"/>
-    <link rel="stylesheet" href="../src/css/template-2.css"/>
-    <link rel="stylesheet" href="../src/css/icon.css"/>
+    <link rel="stylesheet" href="../../src/css/main.css"/>
+    <link rel="stylesheet" href="../../src/css/template-page.css"/>
+    <link rel="stylesheet" href="../../src/css/template-2.css"/>
+    <link rel="stylesheet" href="../../src/css/icon.css"/>
 </head>
 <body>
 <div class="content">
     <nav class="tp-nav">
         <div class="tp-comeback">
             <div>
-                <img src="../src/image/back.png" alt=""/><span>上一页</span>
+                <img src="../../src/image/back.png" alt=""/><span>上一页</span>
             </div>
         </div>
         <div class="tp-tohome">
             <div>
-                <img src="../src/image/home.png" alt=""/><span>首页</span>
+                <img src="../../src/image/home.png" alt=""/><span>首页</span>
             </div>
         </div>
         <div class="tp-pagetop">
             <div>
-                <span>设备借用</span>
+                <span>设备归还</span>
             </div>
         </div>
     </nav>
@@ -38,96 +38,61 @@
         <div class="tp-main-lf">
             <div class="tab-content">
                 <div class="block"></div>
-                <div id="test0" class="tp-main-lf-info tp-tb-content tab-pane fade ">
+                <div id="ctrl-code" class="tp-main-lf-info tp-tb-content tab-pane fade Ctrl-code">
                     <!--人员扫卡-->
                     <div class="tp-tb-content">
+                        <div class="tp-card-rg">
+                            <div class="info-box photo-box">
+                                <div>
+                                    <img src="../../src/image/ctrl-test.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
                         <div class="tp-card-lf">
                             <div class="info-box">
                                 <div>
                                     <p>
-                                        <span>姓名：</span><b>某某某</b>
+                                        <span>设备名称：</span><b>某某某</b>
                                     </p>
                                     <p>
-                                        <span>卡号：</span><b>011720118</b>
+                                        <span>设备编号：</span><b>011720118</b>
                                     </p>
                                     <p>
-                                        <span>部门：</span><b>航空宇航</b>
+                                        <span>设备类型：</span><b>航空宇航</b>
+                                    </p>
+                                    <p>
+                                        <span>借用人：</span><b>张三</b>
+                                    </p>
+                                    <p>
+                                        <span>存放区域：</span> <b>某某某区域</b>
                                     </p>
                                     <p class="remark-txt">
-                                        <span>备注：</span><b>************************************************************************</b>
+                                        <span>备&nbsp;&nbsp;注：</span><b>改类型设备数量较多改类型设备数量较多</b>
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tp-card-rg">
-                            <div class="info-box photo-box">
-                                <div>
-                                    <img src="../src/image/test.jpg" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="test1" class="tp-main-lf-info tp-tb-content tab-pane fade ">
-                    <!--人员扫卡-->
+                <div id="ctrl-takephotos" class="tp-main-lf-info tp-tb-content tab-pane fade Ctrl-Takephotos">
                     <div class="tp-tb-content">
-                        <div class="tp-card-lf">
-                            <div class="info-box">
-                                <div>
-                                    <p>
-                                        <span>姓名：</span><b>某某某</b>
-                                    </p>
-                                    <p>
-                                        <span>卡号：</span><b>011720118</b>
-                                    </p>
-                                    <p>
-                                        <span>部门：</span><b>航空宇航</b>
-                                    </p>
-                                    <p>
-                                        <span>备注：</span><b>************************************************************************</b>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tp-card-rg">
-                            <div class="info-box photo-box">
-                                <div>
-                                    <img src="../src/image/test.jpg" alt="">
+                        <div class="ctrl-photos">
+
+                            <!--<div class="ctrl-photos-box">-->
+                                <!--<img class="photo-border" src="../../src/image/photo-border.png" alt="">-->
+                                <!--<img src="../../src/image/ctrl-test.jpg" alt="">-->
+                            <!--</div>-->
+                            <div class="ctrl-photos-box">
+                                <img class="photo-border" src="../../src/image/photo-border.png" alt="">
+                                <div class="add-photo">
+                                    <div class="add-photo-btn">
+                                        <span>+点击拍摄</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--<div id="test2" class="tp-main-lf-info tp-tb-content tab-pane fade ">-->
-                    <!--&lt;!&ndash;人员扫卡&ndash;&gt;-->
-                    <!--<div class="tp-tb-content">-->
-                        <!--<div class="tp-card-lf">-->
-                            <!--<div class="info-box">-->
-                                <!--<div>-->
-                                    <!--<p>-->
-                                        <!--<span>姓名：</span><b>某某某</b>-->
-                                    <!--</p>-->
-                                    <!--<p>-->
-                                        <!--<span>卡号：</span><b>011720118</b>-->
-                                    <!--</p>-->
-                                    <!--<p>-->
-                                        <!--<span>部门：</span><b>航空宇航</b>-->
-                                    <!--</p>-->
-                                    <!--<p>-->
-                                        <!--<span>备注：</span><b>************************************************************************</b>-->
-                                    <!--</p>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="tp-card-rg">-->
-                            <!--<div class="info-box photo-box">-->
-                                <!--<div>-->
-                                    <!--<img src="../src/image/test.jpg" alt="">-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
                 <div class="block"></div>
             </div>
         </div>
@@ -137,11 +102,11 @@
                 <div class="tp-btn-other-1"></div>
                 <div class="tp-btn-1">
                     <div class="tp-btn-info">
-                        <img src="../src/image/btn-4.png" alt="" class="static"/>
-                        <img src="../src/image/btn-4-s.png" alt="" class="dynamic"/>
+                        <img src="../../src/image/btn-4.png" alt="" class="static"/>
+                        <img src="../../src/image/btn-4-s.png" alt="" class="dynamic"/>
                         <div class="tp-btn-box active" data-tab="0" >
-                            <a class="tab-a" data-toggle="tab" href="#test0">
-                                <span>信息识别</span>
+                            <a class="tab-a" data-toggle="tab" href="#ctrl-code">
+                                <span>设备信息</span>
                             </a>
                         </div>
                     </div>
@@ -152,11 +117,11 @@
                 <div class="block"></div>
                 <div class="tp-btn-2">
                     <div class="tp-btn-info">
-                        <img src="../src/image/btn-4.png" alt="" class="static"/>
-                        <img src="../src/image/btn-4-s.png" alt="" class="dynamic"/>
+                        <img src="../../src/image/btn-4.png" alt="" class="static"/>
+                        <img src="../../src/image/btn-4-s.png" alt="" class="dynamic"/>
                         <div class="tp-btn-box" data-tab="1">
-                            <a class="tab-a" data-toggle="tab" href="#test1">
-                                <span>设备扫码</span>
+                            <a class="tab-a" data-toggle="tab" href="#ctrl-takephotos">
+                                <span>设备状态记录</span>
                             </a>
                         </div>
                     </div>
@@ -165,19 +130,19 @@
             </div>
             <div class="block"></div>
             <!--<div class="tp-btn-level tp-btn-level-3">-->
-                <!--<div class="tp-btn-3">-->
-                    <!--<div class="tp-btn-info">-->
-                        <!--<img src="../src/image/btn-3.png" alt="" class="static"/>-->
-                        <!--<img src="../src/image/btn-3-s.png" alt="" class="dynamic"/>-->
-                        <!--<div class="tp-btn-box" data-tab="2">-->
-                            <!--<a class="tab-a" data-toggle="tab" href="#test2">-->
-                                <!--<span><b class="icon-dayin"></b>打印二维码</span>-->
-                            <!--</a>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="block"></div>-->
-                <!--<div class="tp-btn-other-2"></div>-->
+            <!--<div class="tp-btn-3">-->
+            <!--<div class="tp-btn-info">-->
+            <!--<img src="../src/image/btn-3.png" alt="" class="static"/>-->
+            <!--<img src="../src/image/btn-3-s.png" alt="" class="dynamic"/>-->
+            <!--<div class="tp-btn-box" data-tab="2">-->
+            <!--<a class="tab-a" data-toggle="tab" href="#test2">-->
+            <!--<span><b class="icon-dayin"></b>打印二维码</span>-->
+            <!--</a>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="block"></div>-->
+            <!--<div class="tp-btn-other-2"></div>-->
             <!--</div>-->
         </div>
     </main>
@@ -190,8 +155,8 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="../plugins/jquery.rotate/jquery.rotate.min.js"></script>
-<script src="../src/js/template-main.js"></script>
+<script src="../../plugins/jquery.rotate/jquery.rotate.min.js"></script>
+<script src="../../src/js/template-main.js"></script>
 <script>
     var list=[0,1];
     var fister_rotate = $('.tp-btn-1').find('.dynamic');
@@ -207,6 +172,8 @@
         $('.tp-submit-btn').attr('data-index',num);
         if(num==list.length-1){
             $('.tp-submit-btn').html('确认');
+//            ----------确认后事件
+
         }else{
             $('.tp-submit-btn').html('下一步');
         }
@@ -243,6 +210,19 @@
         }
         if(index==list.length-2){
             $(this).html('确认');
+        }
+    })
+
+//    设备拍照
+    $('.add-photo-btn').click(function () {
+        console.log('点击');
+        var html=
+                ` <div class="ctrl-photos-box">
+                    <img class="photo-border" src="../../src/image/photo-border.png" alt="">
+                    <img src="../../src/image/ctrl-test.jpg" alt="">
+                 </div>`;
+        if($('.ctrl-photos').find('.ctrl-photos-box').length<3){
+            $('.ctrl-photos').prepend(html);
         }
     })
 </script>

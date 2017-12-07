@@ -21,10 +21,8 @@
       flex-direction:column;
     }
     .tp-main-lf-info{
-      flex: 6;
+      flex: 7;
       height: 100%;
-      background: url("../image/card.png") no-repeat;
-      background-size: 100% 100%;
       padding: 5% 15% 5% 5%;
       display: flex;
       //flex-direction: column;
@@ -35,28 +33,24 @@
         .info-box{
           width: 100%;
           height: 100%;
-          display: inline-table;
-          vertical-align: middle;
-          text-align: center;
-          div{
-            display: table-cell;
-            vertical-align: middle;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .info-box-border{
           }
         }
         .tp-card-lf{
-          flex: 3;
-          width: 100%;
+          flex: @tp-main-lf;
           .info-box{
-            width: 100%;
-            height: 100%;
             text-align: left;
-            div{
-              display: table-cell;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .info-box-border{
               padding-left: 1rem;
               vertical-align: middle;
               font-size: 1rem;
               box-sizing: border-box;
-              max-width: 6rem;
               word-wrap:break-word;
               color: #000000;
               span{
@@ -72,6 +66,7 @@
         }
         .tp-card-rg{
           flex: @tp-main-rg;
+          width: 100%;
           height: 100%;
           .info-box{
             width: 100%;
@@ -236,5 +231,137 @@
       }
     }
 
+  }
+}
+#user-code.User-code{
+  background: url("../image/card.png") no-repeat;
+  background-size: 100% 100%;
+  .tp-card-lf{
+    width: 60%;
+    flex: 3;
+    .info-box{
+      width: 100%;
+      .info-box-border{
+        width: 100%;
+      }
+    }
+  }
+}
+#ctrl-code.Ctrl-code{
+  background: url('../image/ctrl-box.png') no-repeat;
+  background-size: 100% 100%;
+  padding: 5%;
+  flex: 10;
+  .tp-card-rg {
+    flex: 3;
+  }
+  .info-box div{
+    font-size: .9rem;
+    letter-spacing: 1px;
+    span{
+      display: inline-block;
+      width: 5rem;
+    }
+  }
+  .photo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+      display: table-cell;
+      vertical-align: middle;
+      img{
+        width: 10rem;
+      }
+    }
+  }
+  .tp-card-lf{
+    .info-box{
+      justify-content: flex-start;
+      span{
+        color: #030303;
+      }
+      b{
+        color: #000;
+        font-weight: normal;
+      }
+      .select-area{
+        text-align: center;
+        .select-area-btn{
+          display: inline-block;
+          width: 160px;
+          height: 2.5rem;
+          background: url(../image/QR-btn.png) no-repeat;
+          background-size: 100% 2.5rem;
+          text-align: center;
+          font-size: .9rem;
+          color: #fff;
+          line-height: 2.5rem;
+          text-shadow: 0px 0px 25px #2e9eff;
+          letter-spacing: .1rem;
+        }
+      }
+    }
+  }
+  .remark-txt{
+    .input-box-1-notice{
+      right: 10px;
+      top:-4px;
+    }
+  }
+  .remark-txt.focus{
+    .input-box-1-notice{
+      //right: 10px;
+      //top:6px;
+    }
+  }
+}
+#ctrl-takephotos.Ctrl-Takephotos{
+  background: url("../image/ctrl-takephotos.png") no-repeat;
+  background-size: 100% 100%;
+  flex-direction: column;
+  padding: 8% 5% 5% 5%;
+  .ctrl-photos{
+    flex: 1;
+    height: 80%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ctrl-photos-box{
+      position: relative;
+      height: 13rem;
+      width: 10rem;
+      margin: 0 20px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 1px 2px 12px #191818;
+      .photo-border{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+      img{
+        width: 80%;
+      }
+      .add-photo{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        color: #0E4352;
+        font-weight: bold;
+        .add-photo-btn{
+          padding: 8px 12px;
+          border: 2px solid #0E4352;
+          z-index: 200;
+          border-radius: 3px;
+        }
+      }
+    }
   }
 }

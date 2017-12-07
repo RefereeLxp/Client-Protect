@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>这是一个页面</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../src/css/main.css"/>
+    <link rel="stylesheet" href="../../src/css/template-page.css"/>
+    <link rel="stylesheet" href="../../src/css/check.css"/>
+</head>
+<body>
+<div class="content">
+    <div class="content-bg">
+        <nav class="tp-nav">
+            <div class="tp-comeback">
+                <div>
+                    <img src="../../src/image/back.png" alt=""/><span>上一页</span>
+                </div>
+            </div>
+            <div class="tp-tohome">
+                <div>
+                    <img src="../../src/image/home.png" alt=""/><span>首页</span>
+                </div>
+            </div>
+            <div class="tp-pagetop">
+                <div>
+                    <span>归还设备</span>
+                </div>
+            </div>
+        </nav>
+        <div class="check-main">
+            <div class="check-box">
+                <div class="check-btn">
+                    <div class="check-btn-box check-btn-box-lf swiping-ctrlQR">
+                        <img src="../../src/image/check-btn.png" alt="" class="rotate-img">
+                        <span>设备扫码</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="tp-nav">
+        <div class="tp-comeback">
+            <div>
+                <img src="../../src/image/back.png" alt=""/><span>返回</span>
+            </div>
+        </div>
+        <div class="tp-pagetop">
+            <div>
+                <span>存库页面</span>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="tp-pop-box pop-hide">
+    <div class="tp-pop-info">
+        <div class="tp-pop">
+            <p>系统未绑定您的人员信息</p>
+            <p>如需绑定请按确定，无需绑定请按取消</p>
+        </div>
+        <div class="tp-pop-btn">
+            <div class="pop-btn-box">
+                <div class="pop-btn close-pop"><span>取消</span></div>
+            </div>
+            <div class="pop-btn-box">
+                <div class="pop-btn"><span>确定</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--刷卡弹框-->
+<div class="tp-pop-box pop-hide swiping-ctrlQR-pop">
+    <div class="tp-pop-info">
+        <div class="tp-pop">
+        </div>
+        <div class="tp-pop-btn">
+            <div class="pop-btn-box">
+                <div class="pop-btn close-pop"><span>取消</span></div>
+            </div>
+            <div class="pop-btn-box">
+                <div class="pop-btn"><span>确定</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../plugins/jquery.rotate/jquery.rotate.min.js"></script>
+<script src="../../src/js/template-main.js"></script>
+<script>
+    var address1=$('.swiping-ctrlQR-pop');
+    var url='repay-index.html'
+    $('.swiping-ctrlQR').click(function () {
+        $('.swiping-ctrlQR-pop').addClass('pop-open');
+        SwipingCtrlQR_Verify(address1,0);
+    });
+    $('.swiping-ctrlQR-pop').find('.pop-btn').click(function (event) {
+        event.stopPropagation();
+        SwipingCtrlQR_Verify(address1,1);
+        setTimeout(function () {
+            SwipingCtrlQR_Verify(address1,2,url)
+        },2000);
+    });
+    var rotate = $('.swiping-ctrlQR').find('.rotate-img');
+    img_rotate(rotate);
+</script>
+</body>
+</html>
